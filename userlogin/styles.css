@@ -1,0 +1,121 @@
+/* css by David Garcia, 2021 */
+
+/*To have the background on the entire page*/
+body {
+  /* instructs browser to auto scale width & height */
+  background: url('cybersecurity.jpg') no-repeat center fixed;
+  /* resizes the background image to cover up whole tag space, 
+    image will be stretched and cropped depending on ratio. */
+  background-size: cover;
+}
+
+html, body * {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.frame {
+  height: 575px;
+  width: 430px;
+  background:
+    linear-gradient(rgba(35, 43, 85, 0.75),
+      rgba(35, 43, 85, 0.95)),
+    url(keyhole.jpg) no-repeat center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  padding-top: 40px;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.user-signin {
+  font-family: 'Times New Roman', Times, serif;
+  width: 430px;
+  height: 375px;
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.user-signin input {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.user-style {
+  width: 100%;
+  height: 35px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, .2);
+}
+
+label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, .7);
+  display: block;
+}
+
+:focus {
+  outline: none;
+}
+
+.user-signin input:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.562);
+  border: none;
+  padding-right: 45px;
+  transition: .4s ease;
+}
+
+.button-signin {
+  float: center;
+  font-weight: 825;
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 4px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 22px;
+  margin-top: 25px;
+  background-color: rgb(0, 2, 110);
+}
+
+/* Background color when mouse hovers over button */
+.button-signin:hover {
+  background-color: #0750fa;
+}
+
+.button-signin:active {
+  /* Controls space inside the button, buffer room, and clickable space */
+  /* How much the button moves */
+  transform: translateY(2px);
+}

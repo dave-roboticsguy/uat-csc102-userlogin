@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- casino_main.html by David Garcia, 2021 -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Linking JavaScript file to HTML -->
+  <script src="..\userlogin\code.js"></script>
+</head>
+
+<body onload="document.form1.firstname.focus();">
+  <div class="wrap">
+    <div class="frame">
+      <div class="nav">
+      </div>
+      <div>
+        <form name='form1' class="user-signin" onSubmit="return formValid();">
+          <label for="firstname">First Name</label>
+          <input id="firstname" class="user-style" type="text" name="firstname" size="20" placeholder="" />
+
+          <label for="lastname">Last Name</label>
+          <input id="lastname" class="user-style" type="text" name="lastname" size="20" placeholder="" />
+
+          <label for="badgenum">Badge Number</label>
+          <input id="badgenum" class="user-style" type="text" name="badgenumber" placeholder="" />
+
+          <div class=>
+            <!-- <button type="submit" onclick="formValid()" value="Submit">Login Status</button> -->
+            <input class="button-signin" type="submit" name="submit" value="Submit" />
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+</body>
+
+</html>
