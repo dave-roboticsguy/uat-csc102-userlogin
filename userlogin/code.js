@@ -80,13 +80,16 @@ function numOnly(bnum) {
 
 function badgeNumValid(bnum, max) {
     var bnum_len = bnum.value.length;
+    var first_name = document.getElementById("firstname").value;
+    var last_name = document.getElementById("lastname").value;
+
     if (bnum_len == 0 || bnum_len >= max) {
         alert("Badge Number should not be empty.\nThe length needs three or less digits");
         bnum.focus();
         return false;
     }
     else {
-        alert('Form Succesfully Submitted');
+        alert("Welcome " + first_name + " " + last_name);
         window.location.reload()
         return true;
     }
