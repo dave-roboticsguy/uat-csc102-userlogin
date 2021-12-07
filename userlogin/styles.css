@@ -14,12 +14,14 @@ html, body * {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Sets the height and width for the form with padding. */
 .wrap {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 140px;
   padding-bottom: 100px;
 }
 
+/* Sets the style needed for inside the form, to include background color. */
 .frame {
   height: 575px;
   width: 430px;
@@ -37,18 +39,20 @@ html, body * {
   transition: all .5s ease;
 }
 
+/* Sets the location of the user inputs inside the form */
 .nav {
   width: 100%;
-  height: 100px;
+  height: 70px;
   padding-top: 40px;
   opacity: 1;
   transition: all .5s ease;
 }
 
+/* Sets the properties for the user inputs bubbles */
 .user-signin {
   font-family: 'Times New Roman', Times, serif;
-  width: 430px;
-  height: 375px;
+  width: 415px;
+  height: 325px;
   font-size: 30px;
   font-weight: 500;
   padding-left: 40px;
@@ -57,6 +61,7 @@ html, body * {
   transition: opacity .5s ease, transform .5s ease;
 }
 
+/* Sets the properties for user's text */
 .user-signin input {
   color: #ffffff;
   font-size: 13px;
@@ -93,6 +98,7 @@ label {
   transition: .4s ease;
 }
 
+/* Submit button properties */
 .button-signin {
   float: center;
   font-weight: 825;

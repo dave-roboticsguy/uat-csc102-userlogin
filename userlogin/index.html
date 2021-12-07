@@ -12,12 +12,14 @@
   <script src="..\userlogin\code.js"></script>
 </head>
 
+<!-- The focus() method gives focus to an element -->
 <body onload="document.form1.firstname.focus();">
   <div class="wrap">
     <div class="frame">
       <div class="nav">
       </div>
       <div>
+        <!-- onSubmit xecutes a JavaScript formValid() when a form is submitted -->
         <form name='form1' class="user-signin" onSubmit="return formValid();">
           <label for="firstname">First Name</label>
           <input id="firstname" class="user-style" type="text" name="firstname" size="20" placeholder="" />
